@@ -90,6 +90,9 @@
         <h3>
             <asp:Label ID="orderStatusLabel" runat="server"></asp:Label>
         </h3>
+        <p>
+            <asp:Label ID="shoppingCartLabel" runat="server" Text="Change Test"></asp:Label>
+        </p>
     </form>
     <p>
         &nbsp;</p>

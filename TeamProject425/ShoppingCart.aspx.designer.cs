@@ -31,31 +31,31 @@ namespace TeamProject425 {
         protected global::System.Web.UI.WebControls.Label addressLabel;
         
         /// <summary>
-        /// userAddressLabel control.
+        /// addressTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userAddressLabel;
+        protected global::System.Web.UI.WebControls.TextBox addressTextBox;
         
         /// <summary>
-        /// paymentMethodLabel control.
+        /// creditCardLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label paymentMethodLabel;
+        protected global::System.Web.UI.WebControls.Label creditCardLabel;
         
         /// <summary>
-        /// userCreditCardLabel control.
+        /// creditCardTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label userCreditCardLabel;
+        protected global::System.Web.UI.WebControls.TextBox creditCardTextBox;
         
         /// <summary>
         /// productLabel control.
@@ -155,14 +155,5 @@ namespace TeamProject425 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label orderStatusLabel;
-        
-        /// <summary>
-        /// shoppingCartLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label shoppingCartLabel;
     }
 }

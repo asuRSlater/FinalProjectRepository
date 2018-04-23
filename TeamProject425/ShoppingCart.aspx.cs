@@ -13,5 +13,11 @@ namespace TeamProject425
         {
 
         }
+
+        protected void purchaseButton_Click(object sender, EventArgs e)
+        {
+            orderStatusLabel.Text = "Congratulations, your purchase was successfull. It's on it's way!";
+            
+        }
     }
 }

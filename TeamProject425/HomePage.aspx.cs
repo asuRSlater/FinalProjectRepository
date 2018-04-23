@@ -13,5 +13,10 @@ namespace TeamProject425
         {
 
         }
+
+        protected void openCatalogButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Catalog.aspx", true);
+        }
     }
 }

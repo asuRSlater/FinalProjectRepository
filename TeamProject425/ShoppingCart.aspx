@@ -30,12 +30,12 @@
                     <asp:Label ID="addressLabel" runat="server" Text="Address:"></asp:Label>
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="userAddressLabel" runat="server" Text="1234 S Avondale Rd, Tempe AZ, 85382"></asp:Label>
+                    <asp:TextBox ID="addressTextBox" runat="server" Width="249px"></asp:TextBox>
                     <br />
-                    <asp:Label ID="paymentMethodLabel" runat="server" Text="Payment:"></asp:Label>
+                    <asp:Label ID="creditCardLabel" runat="server" Text="Card Number:"></asp:Label>
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="userCreditCardLabel" runat="server" Text="AMEX: 1111 2222 3333 4444"></asp:Label>
+                    <asp:TextBox ID="creditCardTextBox" runat="server" Width="250px"></asp:TextBox>
                 </td>
                 <td class="auto-style2"></td>
                 <td class="auto-style2"></td>
@@ -79,7 +79,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="cancelButton" runat="server" Text="Cancel" Width="165px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="purchaseButton" runat="server" Text="Purchase" Width="165px" />
+                    <asp:Button ID="purchaseButton" runat="server" Text="Purchase" Width="165px" OnClick="purchaseButton_Click" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -91,8 +91,7 @@
             <asp:Label ID="orderStatusLabel" runat="server"></asp:Label>
         </h3>
         <p>
-            <asp:Label ID="shoppingCartLabel" runat="server" Text="Change Test"></asp:Label>
-        </p>
+            &nbsp;</p>
     </form>
     <p>
         &nbsp;</p>

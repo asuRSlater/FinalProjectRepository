@@ -69,6 +69,10 @@
                 </td>
             </tr>
         </table>
+        <br />
+        <br />
+        <br />
+        <asp:Button ID="goToCartButton" runat="server" Font-Bold="True" Font-Size="25px" Height="63px" OnClick="goToCartButton_Click" Text="Go To Cart" Width="134px" />
     </form>
 </body>
 </html>

@@ -13,5 +13,10 @@ namespace TeamProject425
         {
 
         }
+
+        protected void goToCartButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ShoppingCart.aspx", true);
+        }
     }
 }

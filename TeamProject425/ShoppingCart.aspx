@@ -12,6 +12,9 @@
         .auto-style2 {
             height: 80px;
         }
+        .auto-style3 {
+            width: 108px;
+        }
     </style>
 </head>
 <body>
@@ -44,30 +47,44 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="productLabel" runat="server" Text="Your New..."></asp:Label>
+                    <asp:Label ID="Label1" runat="server" Text="YOUR CART"></asp:Label>
                     <br />
                     <br />
-                    <asp:Image ID="zo2Image" runat="server" Height="190px" ImageUrl="~/Internal Images/Zo2Shoes.jpg" Width="379px" />
+                    <table class="auto-style1">
+                        <tr>
+                            <td class="auto-style3">
+                                <asp:ListBox ID="ListBox1" runat="server" DataSourceID="SqlDataSource1" DataTextField="name" DataValueField="name"></asp:ListBox>
+                                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="select products.name
+from products, cart
+where cart.RecNumber = products.RecNumber;"></asp:SqlDataSource>
+                            </td>
+                            <td>
+                                <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSourcePrice" DataTextField="price" DataValueField="price"></asp:ListBox>
+                                <asp:SqlDataSource ID="SqlDataSourcePrice" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="Select price
+From products, cart
+Where cart.RecNumber = products.RecNumber;"></asp:SqlDataSource>
+                            </td>
+                        </tr>
+                    </table>
                     <br />
                     <br />
-                    <asp:Label ID="productInfoLabel" runat="server" Text="Zo2 Shoes"></asp:Label>
+                    <br />
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="sizeLabel" runat="server" Text="Size:"></asp:Label>
-&nbsp;
-                    <asp:Label ID="actualProductSizeLabel" runat="server" Text="11"></asp:Label>
+                    &nbsp;
                     <br />
                     <br />
-                    <asp:Label ID="PriceLabel" runat="server" Text="Price:"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="actualPriceLabel" runat="server" Text="120.99"></asp:Label>
-                </td>
+                    </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:Label ID="priceLabel" runat="server" Font-Bold="True" Font-Size="Large" Text="Total:"></asp:Label>
+                    <br />
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -77,9 +94,11 @@
                 <td>
                     <asp:Button ID="continueShoppingButton" runat="server" Text="Continue Shopping" OnClick="continueShoppingButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="cancelButton" runat="server" Text="Cancel" Width="165px" OnClick="cancelButton_Click" />
+                    <asp:Button ID="cancelButton" runat="server" Text="Delete Cart" Width="165px" OnClick="cancelButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="purchaseButton" runat="server" Text="Purchase" Width="165px" OnClick="purchaseButton_Click" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Refresh" Width="149px" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

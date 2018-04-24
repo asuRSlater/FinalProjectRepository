@@ -31,24 +31,6 @@ namespace TeamProject425 {
         protected global::System.Web.UI.WebControls.Image searchResultsLogoImage;
         
         /// <summary>
-        /// searchTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox searchTextBox;
-        
-        /// <summary>
-        /// searchPageSearchButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button searchPageSearchButton;
-        
-        /// <summary>
         /// searchResultOne control.
         /// </summary>
         /// <remarks>

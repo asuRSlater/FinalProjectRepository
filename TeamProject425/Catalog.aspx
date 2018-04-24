@@ -81,13 +81,13 @@
             </tr>
             <tr>
                 <td class="auto-style14">
-                    <asp:Button ID="addToCartProductOneButton" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductOneButton" runat="server" Text="Add To Cart" OnClick="addToCartProductOneButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Price: $40,500.99</td>
                 <td class="auto-style3">
-                    <asp:Button ID="addToCartProductTwoButton0" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductTwoButton0" runat="server" Text="Add To Cart" OnClick="addToCartProductTwoButton0_Click" />
 &nbsp;&nbsp;&nbsp; Price: $2,376.55</td>
                 <td class="auto-style13">
-                    <asp:Button ID="addToCartProductThreeButton0" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductThreeButton0" runat="server" Text="Add To Cart" OnClick="addToCartProductThreeButton0_Click" />
 &nbsp;&nbsp; Price: $388,375.00</td>
             </tr>
         </table>
@@ -126,13 +126,13 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:Button ID="addToCartProductFourButton" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductFourButton" runat="server" Text="Add To Cart" OnClick="addToCartProductFourButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp; Price: $35.99</td>
                 <td class="auto-style11">
-                    <asp:Button ID="addToCartProductFiveButton1" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductFiveButton1" runat="server" Text="Add To Cart" OnClick="addToCartProductFiveButton1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp; Price: $99.00</td>
                 <td>
-                    <asp:Button ID="addToCartProductSixButton1" runat="server" Text="Add To Cart" />
+                    <asp:Button ID="addToCartProductSixButton1" runat="server" Text="Add To Cart" OnClick="addToCartProductSixButton1_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp; Price: $120.99</td>
             </tr>
         </table>

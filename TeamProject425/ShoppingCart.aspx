@@ -75,9 +75,9 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Button ID="continueShoppingButton" runat="server" Text="Continue Shopping" />
+                    <asp:Button ID="continueShoppingButton" runat="server" Text="Continue Shopping" OnClick="continueShoppingButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="cancelButton" runat="server" Text="Cancel" Width="165px" />
+                    <asp:Button ID="cancelButton" runat="server" Text="Cancel" Width="165px" OnClick="cancelButton_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Button ID="purchaseButton" runat="server" Text="Purchase" Width="165px" OnClick="purchaseButton_Click" />
                 </td>

@@ -9,14 +9,31 @@ namespace TeamProject425
 {
     public partial class SearchResults : System.Web.UI.Page
     {
+        string searchTerm;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
+            if (!String.IsNullOrEmpty(Session["searchTerm"].ToString()))
+            {
+                //Read values from session
+                searchTerm = Session["searchTerm"].ToString();
+            }
+            else
+            {
+                searchTerm = "";
+            }
+            searchTextBox.Text = searchTerm;
         }
 
-        protected void goToCartButton_Click(object sender, EventArgs e)
+        protected void cartButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("ShoppingCart.aspx", true);
         }
+
+        protected void homeButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx", true);
+        }
+
     }
 }

@@ -13,5 +13,15 @@ namespace TeamProject425
         {
 
         }
+
+        protected void backButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx", true);
+        }
+
+        protected void gocartButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ShoppingCart.aspx", true);
+        }
     }
 }

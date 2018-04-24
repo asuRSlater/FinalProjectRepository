@@ -18,5 +18,12 @@ namespace TeamProject425
         {
             Response.Redirect("Catalog.aspx", true);
         }
+
+        protected void searchButton_Click(object sender, EventArgs e)
+        {
+            Session["searchTerm"] = searchTextBox.Text;
+            Response.Redirect("SearchResults.aspx", true);
+
+        }
     }
 }

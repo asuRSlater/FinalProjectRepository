@@ -19,5 +19,15 @@ namespace TeamProject425
             orderStatusLabel.Text = "Congratulations, your purchase was successfull. It's on it's way!";
             
         }
+
+        protected void continueShoppingButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Catalog.aspx", true);
+        }
+
+        protected void cancelButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx", true);
+        }
     }
 }
